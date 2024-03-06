@@ -1,0 +1,1342 @@
+rdf:about	http://purl.org/vra/AdministrativeArea
+rdfs:label	Administrative Area
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://purl.org/vra/Place
+owl:equivalentClass	http://schema.org/AdministrativeArea
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Agent
+rdf:about	http://purl.org/vra/Agent
+rdfs:label	Agent
+rdfs:comment	Used to describe the person or organization that was responsible for creating a schema:CreativeWork
+rdf:type	http://www.w3.org/2002/07/owl#Class
+owl:equivalentClass	http://xmlns.com/foaf/0.1/Agent
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: City
+rdf:about	http://purl.org/vra/City
+rdfs:label	City
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://purl.org/vra/AdministrativeArea
+owl:equivalentClass	http://schema.org/City
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Civic Structure
+rdf:about	http://purl.org/vra/CivicStructure
+rdfs:label	Civic Structure
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://purl.org/vra/Place
+owl:equivalentClass	http://schema.org/CivicStructure
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Collection
+rdf:about	http://purl.org/vra/Collection
+rdfs:label	Collection
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://schema.org/CreativeWork
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Continent
+rdf:about	http://purl.org/vra/Continent
+rdfs:label	Continent
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://purl.org/vra/Place
+owl:equivalentClass	http://schema.org/Continent
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Culture
+rdf:about	http://purl.org/vra/Culture
+rdfs:label	Culture
+rdfs:comment	vra:culture and vra:culturalContext
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://www.w3.org/2002/07/owl#Thing
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Data Set
+rdf:about	http://rdfs.org/ns/void#DataSet
+rdfs:label	Data Set
+rdfs:comment	Used to represent a collection of VRA records. derived from the vra:collection
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Duration
+rdf:about	http://purl.org/vra/Duration
+rdfs:label	Duration
+rdfs:comment	vra:measurement type runningTime
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://purl.org/vra/Quantity
+owl:equivalentClass	http://schema.org/Duration
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Event
+rdf:about	http://purl.org/vra/Event
+rdfs:label	Event
+rdfs:comment	used to represent the timespan during what a CreativeWork was created, displayed, broadcast etc. derived from the vra:date. Also used to represent a vra:Agent activityDate
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://www.w3.org/2002/07/owl#Thing
+owl:equivalentClass	http://schema.org/Event
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Image
+rdf:about	http://purl.org/vra/Image
+rdfs:label	Image
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://schema.org/CreativeWork
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Inscription
+rdf:about	http://purl.org/vra/Inscription
+rdfs:label	Inscription
+rdfs:comment	used to represent vra:Inscription
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://schema.org/CreativeWork
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Intangible
+rdf:about	http://purl.org/vra/Intangible
+rdfs:label	Intangible
+rdfs:comment	intangible entities
+rdf:type	http://www.w3.org/2002/07/owl#Class
+owl:equivalentClass	http://schema.org/Intangible
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Material
+rdf:about	http://purl.org/vra/Material
+rdfs:label	Material
+rdfs:comment	vra:material
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Organization
+rdf:about	http://purl.org/vra/Organization
+rdfs:label	Organization
+rdfs:comment	Used to represent a vra:corporate NameType
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://xmlns.com/foaf/0.1/Agent
+owl:equivalentClass	http://schema.org/Organization
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Person
+rdf:about	http://purl.org/vra/Person
+rdfs:label	Person
+rdfs:comment	Used to represent a vra:personal or vra:family NameType
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://purl.org/vra/Agent
+owl:equivalentClass	http://schema.org/Person
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Place
+rdf:about	http://purl.org/vra/Place
+rdfs:label	Place
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://www.w3.org/2002/07/owl#Thing
+owl:equivalentClass	http://schema.org/Place
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Quantitative Value
+rdf:about	http://purl.org/vra/QuantitativeValue
+rdfs:label	Quantitative Value
+rdfs:comment	quantitative values
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://purl.org/vra/StructuredValue
+owl:equivalentClass	http://schema.org/QUantitativeValue
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Quantity
+rdf:about	http://purl.org/vra/Quantity
+rdfs:label	Quantity
+rdfs:comment	vra:measurement type count
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://purl.org/vra/Intangible
+owl:equivalentClass	http://schema.org/Quantity
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: State
+rdf:about	http://purl.org/vra/State
+rdfs:label	State
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://purl.org/vra/AdministrativeArea
+owl:equivalentClass	http://schema.org/State
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Structured Value
+rdf:about	http://purl.org/vra/StructuredValue
+rdfs:label	Structured Value
+rdfs:comment	structured values
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://purl.org/vra/Intangible
+owl:equivalentClass	http://schema.org/StructuredValue
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Style Period
+rdf:about	http://purl.org/vra/StylePeriod
+rdfs:label	Style Period
+rdfs:comment	vra:stylePeriod
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://purl.org/vra/Intangible
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Technique
+rdf:about	http://purl.org/vra/Technique
+rdfs:label	Technique
+rdfs:comment	vra:technique
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://purl.org/vra/Intangible
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: Work
+rdf:about	http://purl.org/vra/Work
+rdfs:label	Work
+rdf:type	http://www.w3.org/2002/07/owl#Class
+rdfs:subClassOf	http://schema.org/CreativeWork
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: area
+rdf:about	http://purl.org/vra/area
+rdfs:label	area
+rdfs:comment	vra:measurement type area
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/QuantitativeValue
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: author
+rdf:about	http://purl.org/vra/author
+rdfs:label	author
+rdfs:comment	vra:Agent assigned to creating a vra:Inscription
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/Agent
+owl:equivalentProperty	http://schema.org/author
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: base
+rdf:about	http://purl.org/vra/base
+rdfs:label	base
+rdfs:comment	vra:measurement type base
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: based on
+rdf:about	http://purl.org/vra/basedOn
+rdfs:label	based on
+rdfs:comment	vra:relation type basedOn
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/preparatoryFor
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: builder
+rdf:about	http://purl.org/vra/builder
+rdfs:label	builder
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: cartoon for
+rdf:about	http://purl.org/vra/cartoonFor
+rdfs:label	cartoon for
+rdfs:comment	vra:relation type cartoonFor
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: circumference
+rdf:about	http://purl.org/vra/circumference
+rdfs:label	circumference
+rdfs:comment	vra:measurement type circumference
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/QuantitativeValue
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: collector
+rdf:about	http://purl.org/vra/collector
+rdfs:label	collector
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: commissioner
+rdf:about	http://purl.org/vra/commissioner
+rdfs:label	commissioner
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: component of
+rdf:about	http://purl.org/vra/componentOf
+rdfs:label	component of
+rdfs:comment	vra:relation type componentOf
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: composer
+rdf:about	http://purl.org/vra/composer
+rdfs:label	composer
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: contractor
+rdf:about	http://purl.org/vra/contractor
+rdfs:label	contractor
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: copy of
+rdf:about	http://purl.org/vra/copyOf
+rdfs:label	copy of
+rdfs:comment	vra:relation type copyAfter
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: count
+rdf:about	http://purl.org/vra/count
+rdfs:label	count
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/QuantitativeValue
+owl:equivalentProperty	http://schema.org/inventoryLevel
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: counter proof for
+rdf:about	http://purl.org/vra/counterProofFor
+rdfs:label	counter proof for
+rdfs:comment	vra:relation type counterProofFor
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: creative activity
+rdf:about	http://purl.org/vra/creativeActivity
+rdfs:label	creative activity
+rdfs:comment	vra:agentDate type life (activity)
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:range	http://purl.org/vra/Event
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: creator
+rdf:about	http://purl.org/vra/creator
+rdfs:label	creator
+rdfs:comment	vra:Agent responsible for creating a CreativeWork
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/Agent
+owl:equivalentProperty	http://schema.org/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: cultural context
+rdf:about	http://purl.org/vra/culturalContext
+rdfs:label	cultural context
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:range	http://purl.org/vra/Culture
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: dealer
+rdf:about	http://purl.org/vra/dealer
+rdfs:label	dealer
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: decorator
+rdf:about	http://purl.org/vra/decorator
+rdfs:label	decorator
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: depicted in
+rdf:about	http://purl.org/vra/depictedIn
+rdfs:label	depicted in
+rdfs:comment	vra:relation type depictedIn
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/depicts
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: depicts
+rdf:about	http://purl.org/vra/depicts
+rdfs:label	depicts
+rdfs:comment	vra:relation type depicts
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: depth
+rdf:about	http://purl.org/vra/depth
+rdfs:label	depth
+rdfs:comment	vra:measurement type depth
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/QuantitativeValue
+owl:equivalentProperty	http://schema.org/depth
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: derived from
+rdf:about	http://purl.org/vra/derivedFrom
+rdfs:label	derived from
+rdfs:comment	vra:relation type derivedFrom
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: designed for
+rdf:about	http://purl.org/vra/designedFor
+rdfs:label	designed for
+rdfs:comment	vra:relation type designedFor
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: designer
+rdf:about	http://purl.org/vra/designer
+rdfs:label	designer
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: developer
+rdf:about	http://purl.org/vra/developer
+rdfs:label	developer
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: diameter
+rdf:about	http://purl.org/vra/diameter
+rdfs:label	diameter
+rdfs:comment	vra:measurement type diameter
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/QuantitativeValue
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: director
+rdf:about	http://purl.org/vra/director
+rdfs:label	director
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+owl:equivalentProperty	http://schema.org/director
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: distance between
+rdf:about	http://purl.org/vra/distanceBetween
+rdfs:label	distance between
+rdfs:comment	vra:measurement type distanceBetween
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/QuantitativeValue
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: donator
+rdf:about	http://purl.org/vra/donator
+rdfs:label	donator
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: drafter
+rdf:about	http://purl.org/vra/drafter
+rdfs:label	drafter
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: drawer
+rdf:about	http://purl.org/vra/drawer
+rdfs:label	drawer
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: duration
+rdf:about	http://purl.org/vra/duration
+rdfs:label	duration
+rdfs:comment	vra:measurement type duration
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/QuantitativeValue
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: editor
+rdf:about	http://purl.org/vra/editor
+rdfs:label	editor
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: engineer
+rdf:about	http://purl.org/vra/engineer
+rdfs:label	engineer
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: exhibited at
+rdf:about	http://purl.org/vra/exhibitedAt
+rdfs:label	exhibited at
+rdfs:comment	vra:relation type exhibitedAt
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Place
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: facsimile of
+rdf:about	http://purl.org/vra/facsimileOf
+rdfs:label	facsimile of
+rdfs:comment	vra:relation type facsimileOf
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: financier
+rdf:about	http://purl.org/vra/financier
+rdfs:label	financier
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: formerly larger context for
+rdf:about	http://purl.org/vra/formerlyLargerContextFor
+rdfs:label	formerly larger context for
+rdfs:comment	vra:relation type formerlyLargerContextFor
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Collection
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/formerlyPartOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: formerly part of
+rdf:about	http://purl.org/vra/formerlyPartOf
+rdfs:label	formerly part of
+rdfs:comment	vra:relation type formerlyPartOf
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:range	http://purl.org/vra/Collection
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: former owner
+rdf:about	http://purl.org/vra/formerOwner
+rdfs:label	former owner
+rdfs:comment	vra:location type formerOwner
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:range	http://purl.org/vra/Place
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:subPropertyOf	http://purl.org/vra/locationOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: former repository
+rdf:about	http://purl.org/vra/formerRepository
+rdfs:label	former repository
+rdfs:comment	vra:location type formerRepository
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:range	http://purl.org/vra/Place
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:subPropertyOf	http://purl.org/vra/locationOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: former site
+rdf:about	http://purl.org/vra/formerSite
+rdfs:label	former site
+rdfs:comment	vra:location type formerSite
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:range	http://purl.org/vra/Place
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:subPropertyOf	http://purl.org/vra/locationOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: has cartoon
+rdf:about	http://purl.org/vra/hasCartoon
+rdfs:label	has cartoon
+rdfs:comment	vra:relation type cartoonIs
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/cartoonFor
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: has component
+rdf:about	http://purl.org/vra/hasComponent
+rdfs:label	has component
+rdfs:comment	vra:relation type componentIs
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/componentOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: has context
+rdf:about	http://purl.org/vra/hasContext
+rdfs:label	has context
+rdfs:comment	vra:relation type contextIs
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/designedFor
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: has copy
+rdf:about	http://purl.org/vra/hasCopy
+rdfs:label	has copy
+rdfs:comment	vra:relation type copyIs
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/copyOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: counter proof is
+rdf:about	http://purl.org/vra/hasCounterProof
+rdfs:label	counter proof is
+rdfs:comment	counterProofIs
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/counterProofFor
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: has culture
+rdf:about	http://purl.org/vra/hasCulture
+rdfs:label	has culture
+rdfs:comment	vra:Agent type culture
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Agent
+rdfs:range	http://purl.org/vra/Culture
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: has facsimile
+rdf:about	http://purl.org/vra/hasFacsimile
+rdfs:label	has facsimile
+rdfs:comment	vra:relation type facsimileIs
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/facsimileOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: has image
+rdf:about	http://purl.org/vra/hasImage
+rdfs:label	has image
+rdfs:comment	vra:relation type imageIs
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Image
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/imageOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: has impression
+rdf:about	http://purl.org/vra/hasImpression
+rdfs:label	has impression
+rdfs:comment	vra:relation type impressionIs
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/reliefFor
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: has inscription
+rdf:about	http://purl.org/vra/hasInscription
+rdfs:label	has inscription
+rdfs:comment	vra:inscription
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/Inscription
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: has model
+rdf:about	http://purl.org/vra/hasModel
+rdfs:label	has model
+rdfs:comment	vra:relation type modelIs
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: has plan
+rdf:about	http://purl.org/vra/hasPlan
+rdfs:label	has plan
+rdfs:comment	vra:relation type planIs
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: has printing plate
+rdf:about	http://purl.org/vra/hasPrintingPlate
+rdfs:label	has printing plate
+rdfs:comment	vra:relation type printingPlateIs
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/printingPlateFor
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: has prototype
+rdf:about	http://purl.org/vra/hasPrototype
+rdfs:label	has prototype
+rdfs:comment	vra:relation type prototypeIs
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: has replica
+rdf:about	http://purl.org/vra/hasReplica
+rdfs:label	has replica
+rdfs:comment	vra:relation type replicaIs
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/replicaOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: has study
+rdf:about	http://purl.org/vra/hasStudy
+rdfs:label	has study
+rdfs:comment	vra:relation type studyIs
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/studyFor
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: has style period
+rdf:about	http://purl.org/vra/hasStylePeriod
+rdfs:label	has style period
+rdfs:comment	vra:stylePeriod
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/StylePeriod
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: technique
+rdf:about	http://purl.org/vra/hasTechnique
+rdfs:label	has technique
+rdfs:comment	vra:technique
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/Technique
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: has version
+rdf:about	http://purl.org/vra/hasVersion
+rdfs:label	has version
+rdfs:comment	vra:relation type versionIs
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/versionOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: height
+rdf:about	http://purl.org/vra/height
+rdfs:label	height
+rdfs:comment	vra:measurement type height
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/QuantitativeValue
+owl:equivalentProperty	http://schema.org/height
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: image of
+rdf:about	http://purl.org/vra/imageOf
+rdfs:label	image of
+rdfs:comment	vra:relation type imageOf
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Image
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: inventory level
+rdf:about	http://purl.org/vra/inventoryLevel
+rdfs:label	inventory level
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/QuantitativeValue
+owl:equivalentProperty	http://schema.org/inventoryLevel
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: is related to
+rdf:about	http://purl.org/vra/isRelatedTo
+rdfs:label	is related to
+rdfs:comment	vra:relation
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+owl:equivalentProperty	http://schema.org/isRelatedto
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: larger context for
+rdf:about	http://purl.org/vra/largerContextFor
+rdfs:label	larger context for
+rdfs:comment	vra:relation type largerContextFor
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Collection
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/partOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: length
+rdf:about	http://purl.org/vra/length
+rdfs:label	length
+rdfs:comment	vra:measurement type length
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/QuantitativeValue
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: location of
+rdf:about	http://purl.org/vra/locationOf
+rdfs:label	location of
+rdfs:comment	vra:location
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:range	http://purl.org/vra/Place
+rdfs:domain	http://purl.org/vra/Work
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: manufacturer
+rdf:about	http://purl.org/vra/manufacturer
+rdfs:label	manufacturer
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: mate of
+rdf:about	http://purl.org/vra/mateOf
+rdfs:label	mate of
+rdfs:comment	vra:relation type mateOf
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: material
+rdf:about	http://purl.org/vra/material
+rdfs:label	material
+rdfs:comment	vra:material
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/Material
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: model for
+rdf:about	http://purl.org/vra/modelFor
+rdfs:label	model for
+rdfs:comment	vra:relation type modelFor
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/hasModel
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: owner
+rdf:about	http://purl.org/vra/owner
+rdfs:label	owner
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: painter
+rdf:about	http://purl.org/vra/painter
+rdfs:label	painter
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: partner in set with
+rdf:about	http://purl.org/vra/partnerInSetWith
+rdfs:label	partner in set with
+rdfs:comment	vra:relation type partnerInSetWith
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: part of
+rdf:about	http://purl.org/vra/partOf
+rdfs:label	part of
+rdfs:comment	vra:relation type partOf
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:range	http://purl.org/vra/Collection
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: pendant of
+rdf:about	http://purl.org/vra/pendantOf
+rdfs:label	pendant of
+rdfs:comment	vra:relation type pendentOf
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: performer
+rdf:about	http://purl.org/vra/performer
+rdfs:label	performer
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: photographer
+rdf:about	http://purl.org/vra/photographer
+rdfs:label	photographer
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: place of creation
+rdf:about	http://purl.org/vra/placeOfCreation
+rdfs:label	place of creation
+rdfs:comment	vra:location type creation
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:range	http://purl.org/vra/Place
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:subPropertyOf	http://purl.org/vra/locationOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: place of discovery
+rdf:about	http://purl.org/vra/placeOfDiscovery
+rdfs:label	place of discovery
+rdfs:comment	vra:location type discovery
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:range	http://purl.org/vra/Place
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:subPropertyOf	http://purl.org/vra/locationOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: place of exhibition
+rdf:about	http://purl.org/vra/placeOfExhibition
+rdfs:label	place of exhibition
+rdfs:comment	vra:location type exhibition
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:range	http://purl.org/vra/Place
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:subPropertyOf	http://purl.org/vra/locationOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: place of installation
+rdf:about	http://purl.org/vra/placeOfInstallation
+rdfs:label	place of installation
+rdfs:comment	vra:location type installation
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:range	http://purl.org/vra/Place
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:subPropertyOf	http://purl.org/vra/locationOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: place of intention
+rdf:about	http://purl.org/vra/placeOfIntention
+rdfs:label	place of intention
+rdfs:comment	vra:location type intention
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:range	http://purl.org/vra/Place
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:subPropertyOf	http://purl.org/vra/locationOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: place of ownership
+rdf:about	http://purl.org/vra/placeOfOwnership
+rdfs:label	place of ownership
+rdfs:comment	vra:location type owner
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:range	http://purl.org/vra/Place
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:subPropertyOf	http://purl.org/vra/locationOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: place of performance
+rdf:about	http://purl.org/vra/placeOfPerformance
+rdfs:label	place of performance
+rdfs:comment	vra:location type performance
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:range	http://purl.org/vra/Place
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:subPropertyOf	http://purl.org/vra/locationOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: place of publication
+rdf:about	http://purl.org/vra/placeOfPublication
+rdfs:label	place of publication
+rdfs:comment	vra:location type publication
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/Place
+rdfs:subPropertyOf	http://purl.org/vra/locationOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: place of repository
+rdf:about	http://purl.org/vra/placeOfRepository
+rdfs:label	place of repository
+rdfs:comment	vra:location type repository
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:range	http://purl.org/vra/Place
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:subPropertyOf	http://purl.org/vra/locationOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: place of site
+rdf:about	http://purl.org/vra/placeOfSite
+rdfs:label	place of site
+rdfs:comment	vra:location type site
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:range	http://purl.org/vra/Place
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:subPropertyOf	http://purl.org/vra/locationOf
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: plan for
+rdf:about	http://purl.org/vra/planFor
+rdfs:label	plan for
+rdfs:comment	vra:relation type planFor
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/hasPlan
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: preparatory for
+rdf:about	http://purl.org/vra/preparatoryFor
+rdfs:label	preparatory for
+rdfs:comment	vra:relation type prepatoryFor
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: printer
+rdf:about	http://purl.org/vra/printer
+rdfs:label	printer
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: printing plate for
+rdf:about	http://purl.org/vra/printingPlateFor
+rdfs:label	printing plate for
+rdfs:comment	vra:relation type printingPlateFor
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: producer
+rdf:about	http://purl.org/vra/producer
+rdfs:label	producer
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: programmer
+rdf:about	http://purl.org/vra/programmer
+rdfs:label	programmer
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: prototype for
+rdf:about	http://purl.org/vra/prototypeFor
+rdfs:label	prototype for
+rdfs:comment	vra:relation type prototypeFor
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/hasPrototype
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: relief for
+rdf:about	http://purl.org/vra/reliefFor
+rdfs:label	relief for
+rdfs:comment	vra:relation type reliefFor
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: replica of
+rdf:about	http://purl.org/vra/replicaOf
+rdfs:label	replica of
+rdfs:comment	vra:relation type replicaOf
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: restorer
+rdf:about	http://purl.org/vra/restorer
+rdfs:label	restorer
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: running time
+rdf:about	http://purl.org/vra/runningTime
+rdfs:label	running time
+rdfs:comment	vra:measurement type runningTime
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/QuantitativeValue
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: source for
+rdf:about	http://purl.org/vra/sourceFor
+rdfs:label	source for
+rdfs:comment	vra:relation type sourceFor
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/derivedFrom
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: study for
+rdf:about	http://purl.org/vra/studyFor
+rdfs:label	study for
+rdfs:comment	vra:relation type studyFor
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: venue for
+rdf:about	http://purl.org/vra/venueFor
+rdfs:label	venue for
+rdfs:comment	vra:relation type venueFor
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:range	http://purl.org/vra/Place
+rdfs:domain	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+owl:inverseOf	http://purl.org/vra/exhibitedAt
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: version of
+rdf:about	http://purl.org/vra/versionOf
+rdfs:label	version of
+rdfs:comment	vra:relation type versionOf
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://purl.org/vra/Work
+rdfs:range	http://purl.org/vra/Work
+rdfs:subPropertyOf	http://purl.org/vra/isRelatedTo
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: was alteration
+rdf:about	http://purl.org/vra/wasAlteration
+rdfs:label	was alteration
+rdfs:comment	vra:date type alteration
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/Event
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: was broadcast
+rdf:about	http://purl.org/vra/wasBroadcast
+rdfs:label	was broadcast
+rdfs:comment	vra:date type broadcast
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/Event
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: was commission
+rdf:about	http://purl.org/vra/wasCommission
+rdfs:label	was commission
+rdfs:comment	vra:date type commission
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/Event
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: was created
+rdf:about	http://purl.org/vra/wasCreated
+rdfs:label	was created
+rdfs:comment	vra:date type created
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/Event
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: was designed
+rdf:about	http://purl.org/vra/wasDesigned
+rdfs:label	was designed
+rdfs:comment	vra:date type designed
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/Event
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: was destroyed
+rdf:about	http://purl.org/vra/wasDestroyed
+rdfs:label	was destroyed
+rdfs:comment	vra:date type destroyed
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/Event
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: was discovered
+rdf:about	http://purl.org/vra/wasDiscovered
+rdfs:label	was discovered
+rdfs:comment	vra:date type discovered
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/Event
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: was performed
+rdf:about	http://purl.org/vra/wasPerformed
+rdfs:label	was performed
+rdfs:comment	vra:date type performed
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/Event
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: was presented
+rdf:about	http://purl.org/vra/wasPresented
+rdfs:label	was presented
+rdfs:comment	vra:date type presented
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/Event
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: was produced
+rdf:about	http://purl.org/vra/wasProduced
+rdfs:label	was produced
+rdfs:comment	vra:date type produced
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/Event
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: was published
+rdf:about	http://purl.org/vra/wasPublished
+rdfs:label	was published
+rdfs:comment	vra:date type published
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/Event
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: was restored
+rdf:about	http://purl.org/vra/wasRestored
+rdfs:label	was restored
+rdfs:comment	vra:date type restored
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/Event
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: weight
+rdf:about	http://purl.org/vra/weight
+rdfs:label	weight
+rdfs:comment	vra:measurement type weight
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/QuantitativeValue
+owl:equivalentProperty	http://schema.org/weight
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: width
+rdf:about	http://purl.org/vra/width
+rdfs:label	width
+rdfs:comment	vra:measurement type width
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://purl.org/vra/QuantitativeValue
+owl:equivalentProperty	http://schema.org/width
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: writer
+rdf:about	http://purl.org/vra/writer
+rdfs:label	writer
+rdfs:comment	derived from ULAN list of Artist Roles
+rdf:type	http://www.w3.org/2002/07/owl#ObjectProperty
+rdfs:subPropertyOf	http://purl.org/vra/creator
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: birth date
+rdf:about	http://purl.org/vra/birthDate
+rdfs:label	birth date
+rdfs:comment	vra:agentDate type life (earliestDate)
+rdf:type	http://www.w3.org/2002/07/owl#DatatypeProperty
+rdfs:domain	http://purl.org/vra/Person
+rdfs:range	http://www.w3.org/2001/XMLSchema#date
+owl:equivalentProperty	http://schema.org/birthDate
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: bit rate
+rdf:about	http://purl.org/vra/bitrate
+rdfs:label	bit rate
+rdfs:comment	vra:measurement type bitDepth
+rdf:type	http://www.w3.org/2002/07/owl#DatatypeProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://www.w3.org/2001/XMLSchema#string
+owl:equivalentProperty	http://schema.org/bitrate
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: caption
+rdf:about	http://purl.org/vra/caption
+rdfs:label	caption
+rdfs:comment	caption value for a vra:inscription
+rdf:type	http://www.w3.org/2002/07/owl#DatatypeProperty
+rdfs:subPropertyOf	http://purl.org/vra/text
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: content size
+rdf:about	http://purl.org/vra/contentSize
+rdfs:label	content size
+rdfs:comment	vra:measurement type:fileSize
+rdf:type	http://www.w3.org/2002/07/owl#DatatypeProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://www.w3.org/2001/XMLSchema#string
+owl:equivalentProperty	http://schema.org/contentSize
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: date created
+rdf:about	http://purl.org/vra/dateCreated
+rdfs:label	date created
+rdfs:comment	date of creation
+rdf:type	http://www.w3.org/2002/07/owl#DatatypeProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://www.w3.org/2001/XMLSchema#dateTime
+owl:equivalentProperty	http://schema.org/dateCreated
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: death date
+rdf:about	http://purl.org/vra/deathDate
+rdfs:label	death date
+rdfs:comment	vra:agentDate type life (latestDate)
+rdf:type	http://www.w3.org/2002/07/owl#DatatypeProperty
+rdfs:domain	http://purl.org/vra/Person
+rdfs:range	http://www.w3.org/2001/XMLSchema#date
+rdfs:subPropertyOf	http://www.w3.org/2002/07/owl#topDataProperty
+owl:equivalentProperty	http://schema.org/deathDate
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: description
+rdf:about	http://purl.org/vra/description
+rdfs:label	description
+rdf:type	http://www.w3.org/2002/07/owl#DatatypeProperty
+rdfs:domain	http://www.w3.org/2002/07/owl#Thing
+owl:equivalentProperty	http://schema.org/description
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: end date
+rdf:about	http://purl.org/vra/endDate
+rdfs:label	end date
+rdfs:comment	endDate of a schema:Event
+rdf:type	http://www.w3.org/2002/07/owl#DatatypeProperty
+rdfs:domain	http://purl.org/vra/Event
+rdfs:range	http://www.w3.org/2001/XMLSchema#date
+owl:equivalentProperty	http://schema.org/endDate
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: mark
+rdf:about	http://purl.org/vra/mark
+rdfs:label	mark
+rdfs:comment	mark value of a vra:inscription
+rdf:type	http://www.w3.org/2002/07/owl#DatatypeProperty
+rdfs:subPropertyOf	http://purl.org/vra/text
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: name
+rdf:about	http://purl.org/vra/name
+rdfs:label	name
+rdf:type	http://www.w3.org/2002/07/owl#DatatypeProperty
+rdfs:domain	http://www.w3.org/2002/07/owl#Thing
+rdfs:range	http://www.w3.org/2001/XMLSchema#string
+owl:equivalentProperty	http://schema.org/name
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: position
+rdf:about	http://purl.org/vra/position
+rdfs:label	position
+rdfs:comment	position value for a vra:inscription
+rdf:type	http://www.w3.org/2002/07/owl#DatatypeProperty
+rdfs:subPropertyOf	http://purl.org/vra/description
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: resolution
+rdf:about	http://purl.org/vra/resolution
+rdfs:label	resolution
+rdfs:comment	vra:measurement type resolution
+rdf:type	http://www.w3.org/2002/07/owl#DatatypeProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://www.w3.org/2001/XMLSchema#string
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: signature
+rdf:about	http://purl.org/vra/signature
+rdfs:label	signature
+rdfs:comment	signature value of a vra:inscription
+rdf:type	http://www.w3.org/2002/07/owl#DatatypeProperty
+rdfs:subPropertyOf	http://purl.org/vra/text
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: start date
+rdf:about	http://purl.org/vra/startDate
+rdfs:label	start date
+rdfs:comment	startDate value of a schema:Event
+rdf:type	http://www.w3.org/2002/07/owl#DatatypeProperty
+rdfs:domain	http://purl.org/vra/Event
+rdfs:range	http://www.w3.org/2001/XMLSchema#date
+owl:equivalentProperty	http://schema.org/startDate
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: text
+rdf:about	http://purl.org/vra/text
+rdfs:label	text
+rdfs:comment	Text
+rdf:type	http://www.w3.org/2002/07/owl#DatatypeProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://www.w3.org/2001/XMLSchema#string
+owl:equivalentProperty	http://schema.org/text
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: title
+rdf:about	http://purl.org/vra/title
+rdfs:label	title
+rdfs:comment	Title of a CreativeWork
+rdf:type	http://www.w3.org/2002/07/owl#DatatypeProperty
+rdfs:domain	http://schema.org/CreativeWork
+rdfs:range	http://www.w3.org/2001/XMLSchema#string
+rdfs:subPropertyOf	http://purl.org/vra/name
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: translation
+rdf:about	http://purl.org/vra/translation
+rdfs:label	translation
+rdfs:comment	tranaslation value of a vra:inscription
+rdf:type	http://www.w3.org/2002/07/owl#DatatypeProperty
+rdfs:subPropertyOf	http://purl.org/vra/text
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: unit code
+rdf:about	http://purl.org/vra/unitCode
+rdfs:label	unit code
+rdfs:comment	3 value code for unit of measures used in schema:QuantitativeValue
+rdf:type	http://www.w3.org/2002/07/owl#DatatypeProperty
+rdfs:domain	http://purl.org/vra/QuantitativeValue
+rdfs:range	http://www.w3.org/2001/XMLSchema#string
+owl:equivalentProperty	http://schema.org/unitCode
+rdfs:isDefinedBy	http://purl.org/vra/
+Term Name: value
+rdf:about	http://purl.org/vra/value
+rdfs:label	value
+rdfs:comment	numeric value used in schema:QuantitativeValue
+rdf:type	http://www.w3.org/2002/07/owl#DatatypeProperty
+rdfs:domain	http://purl.org/vra/QuantitativeValue
+owl:equivalentProperty	http://schema.org/value
+rdfs:isDefinedBy	http://purl.org/vra/

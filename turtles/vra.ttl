@@ -1,0 +1,1515 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vra: <http://purl.org/vra/> .
+@prefix so: <http://schema.org/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+vra:AdministrativeArea
+    rdfs:label "Administrative Area" ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf vra:Place ;
+    owl:equivalentClass so:AdministrativeArea ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:Agent
+    rdfs:label "Agent" ;
+    rdfs:comment "Used to describe the person or organization that was responsible for creating a schema:CreativeWork" ;
+    rdf:type owl:Class ;
+    owl:equivalentClass foaf:Agent ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:City
+    rdfs:label "City" ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf vra:AdministrativeArea ;
+    owl:equivalentClass so:City ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:CivicStructure
+    rdfs:label "Civic Structure" ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf vra:Place ;
+    owl:equivalentClass so:CivicStructure ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:Collection
+    rdfs:label "Collection" ;
+    rdf:type owl:Class ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf so:CreativeWork ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:Continent
+    rdfs:label "Continent" ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf vra:Place ;
+    owl:equivalentClass so:Continent ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:Culture
+    rdfs:label "Culture" ;
+    rdfs:comment "vra:culture and vra:culturalContext" ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    rdfs:isDefinedBy vra: ;
+.
+
+void:DataSet
+    rdfs:label "Data Set" ;
+    rdfs:comment "Used to represent a collection of VRA records. derived from the vra:collection" ;
+    rdf:type owl:Class ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:Duration
+    rdfs:label "Duration" ;
+    rdfs:comment "vra:measurement type runningTime" ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf vra:Quantity ;
+    owl:equivalentClass so:Duration ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:Event
+    rdfs:label "Event" ;
+    rdfs:comment "used to represent the timespan during what a CreativeWork was created, displayed, broadcast etc. derived from the vra:date. Also used to represent a vra:Agent activityDate" ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    owl:equivalentClass so:Event ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:Image
+    rdfs:label "Image" ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf so:CreativeWork ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:Inscription
+    rdfs:label "Inscription" ;
+    rdfs:comment "used to represent vra:Inscription" ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf so:CreativeWork ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:Intangible
+    rdfs:label "Intangible" ;
+    rdfs:comment "intangible entities" ;
+    rdf:type owl:Class ;
+    owl:equivalentClass so:Intangible ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:Material
+    rdfs:label "Material" ;
+    rdfs:comment "vra:material" ;
+    rdf:type owl:Class ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:Organization
+    rdfs:label "Organization" ;
+    rdfs:comment "Used to represent a vra:corporate NameType" ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf foaf:Agent ;
+    owl:equivalentClass so:Organization ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:Person
+    rdfs:label "Person" ;
+    rdfs:comment "Used to represent a vra:personal or vra:family NameType" ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf vra:Agent ;
+    owl:equivalentClass so:Person ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:Place
+    rdfs:label "Place" ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    owl:equivalentClass so:Place ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:QuantitativeValue
+    rdfs:label "Quantitative Value" ;
+    rdfs:comment "quantitative values" ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf vra:StructuredValue ;
+    owl:equivalentClass so:QUantitativeValue ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:Quantity
+    rdfs:label "Quantity" ;
+    rdfs:comment "vra:measurement type count" ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf vra:Intangible ;
+    owl:equivalentClass so:Quantity ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:State
+    rdfs:label "State" ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf vra:AdministrativeArea ;
+    owl:equivalentClass so:State ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:StructuredValue
+    rdfs:label "Structured Value" ;
+    rdfs:comment "structured values" ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf vra:Intangible ;
+    owl:equivalentClass so:StructuredValue ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:StylePeriod
+    rdfs:label "Style Period" ;
+    rdfs:comment "vra:stylePeriod" ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf vra:Intangible ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:Technique
+    rdfs:label "Technique" ;
+    rdfs:comment "vra:technique" ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf vra:Intangible ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:Work
+    rdfs:label "Work" ;
+    rdf:type owl:Class ;
+    rdfs:subClassOf so:CreativeWork ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:area
+    rdfs:label "area" ;
+    rdfs:comment "vra:measurement type area" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:QuantitativeValue ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:author
+    rdfs:label "author" ;
+    rdfs:comment "vra:Agent assigned to creating a vra:Inscription" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:Agent ;
+    owl:equivalentProperty "so:author" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:base
+    rdfs:label "base" ;
+    rdfs:comment "vra:measurement type base" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:basedOn
+    rdfs:label "based on" ;
+    rdfs:comment "vra:relation type basedOn" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:preparatoryFor" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:builder
+    rdfs:label "builder" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:cartoonFor
+    rdfs:label "cartoon for" ;
+    rdfs:comment "vra:relation type cartoonFor" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:circumference
+    rdfs:label "circumference" ;
+    rdfs:comment "vra:measurement type circumference" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:QuantitativeValue ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:collector
+    rdfs:label "collector" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:commissioner
+    rdfs:label "commissioner" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:componentOf
+    rdfs:label "component of" ;
+    rdfs:comment "vra:relation type componentOf" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:composer
+    rdfs:label "composer" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:contractor
+    rdfs:label "contractor" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:copyOf
+    rdfs:label "copy of" ;
+    rdfs:comment "vra:relation type copyAfter" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:count
+    rdfs:label "count" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:QuantitativeValue ;
+    owl:equivalentProperty "so:inventoryLevel" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:counterProofFor
+    rdfs:label "counter proof for" ;
+    rdfs:comment "vra:relation type counterProofFor" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:creativeActivity
+    rdfs:label "creative activity" ;
+    rdfs:comment "vra:agentDate type life (activity)" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:range vra:Event ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:creator
+    rdfs:label "creator" ;
+    rdfs:comment "vra:Agent responsible for creating a CreativeWork" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:Agent ;
+    owl:equivalentProperty "so:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:culturalContext
+    rdfs:label "cultural context" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:range vra:Culture ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:dealer
+    rdfs:label "dealer" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:decorator
+    rdfs:label "decorator" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:depictedIn
+    rdfs:label "depicted in" ;
+    rdfs:comment "vra:relation type depictedIn" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:depicts" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:depicts
+    rdfs:label "depicts" ;
+    rdfs:comment "vra:relation type depicts" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:depth
+    rdfs:label "depth" ;
+    rdfs:comment "vra:measurement type depth" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:QuantitativeValue ;
+    owl:equivalentProperty "so:depth" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:derivedFrom
+    rdfs:label "derived from" ;
+    rdfs:comment "vra:relation type derivedFrom" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:designedFor
+    rdfs:label "designed for" ;
+    rdfs:comment "vra:relation type designedFor" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:designer
+    rdfs:label "designer" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:developer
+    rdfs:label "developer" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:diameter
+    rdfs:label "diameter" ;
+    rdfs:comment "vra:measurement type diameter" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:QuantitativeValue ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:director
+    rdfs:label "director" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    owl:equivalentProperty "so:director" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:distanceBetween
+    rdfs:label "distance between" ;
+    rdfs:comment "vra:measurement type distanceBetween" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:QuantitativeValue ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:donator
+    rdfs:label "donator" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:drafter
+    rdfs:label "drafter" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:drawer
+    rdfs:label "drawer" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:duration
+    rdfs:label "duration" ;
+    rdfs:comment "vra:measurement type duration" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:QuantitativeValue ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:editor
+    rdfs:label "editor" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:engineer
+    rdfs:label "engineer" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:exhibitedAt
+    rdfs:label "exhibited at" ;
+    rdfs:comment "vra:relation type exhibitedAt" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Place ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:facsimileOf
+    rdfs:label "facsimile of" ;
+    rdfs:comment "vra:relation type facsimileOf" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:financier
+    rdfs:label "financier" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:formerlyLargerContextFor
+    rdfs:label "formerly larger context for" ;
+    rdfs:comment "vra:relation type formerlyLargerContextFor" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Collection ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:formerlyPartOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:formerlyPartOf
+    rdfs:label "formerly part of" ;
+    rdfs:comment "vra:relation type formerlyPartOf" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:range vra:Collection ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:formerOwner
+    rdfs:label "former owner" ;
+    rdfs:comment "vra:location type formerOwner" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:range vra:Place ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:subPropertyOf "vra:locationOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:formerRepository
+    rdfs:label "former repository" ;
+    rdfs:comment "vra:location type formerRepository" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:range vra:Place ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:subPropertyOf "vra:locationOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:formerSite
+    rdfs:label "former site" ;
+    rdfs:comment "vra:location type formerSite" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:range vra:Place ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:subPropertyOf "vra:locationOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:hasCartoon
+    rdfs:label "has cartoon" ;
+    rdfs:comment "vra:relation type cartoonIs" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:cartoonFor" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:hasComponent
+    rdfs:label "has component" ;
+    rdfs:comment "vra:relation type componentIs" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:componentOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:hasContext
+    rdfs:label "has context" ;
+    rdfs:comment "vra:relation type contextIs" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:designedFor" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:hasCopy
+    rdfs:label "has copy" ;
+    rdfs:comment "vra:relation type copyIs" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:copyOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:hasCounterProof
+    rdfs:label "counter proof is" ;
+    rdfs:comment "counterProofIs" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:counterProofFor" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:hasCulture
+    rdfs:label "has culture" ;
+    rdfs:comment "vra:Agent type culture" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Agent ;
+    rdfs:range vra:Culture ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:hasFacsimile
+    rdfs:label "has facsimile" ;
+    rdfs:comment "vra:relation type facsimileIs" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:facsimileOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:hasImage
+    rdfs:label "has image" ;
+    rdfs:comment "vra:relation type imageIs" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Image ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:imageOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:hasImpression
+    rdfs:label "has impression" ;
+    rdfs:comment "vra:relation type impressionIs" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:reliefFor" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:hasInscription
+    rdfs:label "has inscription" ;
+    rdfs:comment "vra:inscription" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:Inscription ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:hasModel
+    rdfs:label "has model" ;
+    rdfs:comment "vra:relation type modelIs" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:hasPlan
+    rdfs:label "has plan" ;
+    rdfs:comment "vra:relation type planIs" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:hasPrintingPlate
+    rdfs:label "has printing plate" ;
+    rdfs:comment "vra:relation type printingPlateIs" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:printingPlateFor" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:hasPrototype
+    rdfs:label "has prototype" ;
+    rdfs:comment "vra:relation type prototypeIs" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:hasReplica
+    rdfs:label "has replica" ;
+    rdfs:comment "vra:relation type replicaIs" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:replicaOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:hasStudy
+    rdfs:label "has study" ;
+    rdfs:comment "vra:relation type studyIs" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:studyFor" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:hasStylePeriod
+    rdfs:label "has style period" ;
+    rdfs:comment "vra:stylePeriod" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:StylePeriod ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:hasTechnique
+    rdfs:label "has technique" ;
+    rdfs:comment "vra:technique" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:Technique ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:hasVersion
+    rdfs:label "has version" ;
+    rdfs:comment "vra:relation type versionIs" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:versionOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:height
+    rdfs:label "height" ;
+    rdfs:comment "vra:measurement type height" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:QuantitativeValue ;
+    owl:equivalentProperty "so:height" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:imageOf
+    rdfs:label "image of" ;
+    rdfs:comment "vra:relation type imageOf" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Image ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:inventoryLevel
+    rdfs:label "inventory level" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:QuantitativeValue ;
+    owl:equivalentProperty "so:inventoryLevel" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:isRelatedTo
+    rdfs:label "is related to" ;
+    rdfs:comment "vra:relation" ;
+    rdf:type owl:ObjectProperty ;
+    owl:equivalentProperty "so:isRelatedto" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:largerContextFor
+    rdfs:label "larger context for" ;
+    rdfs:comment "vra:relation type largerContextFor" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Collection ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:partOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:length
+    rdfs:label "length" ;
+    rdfs:comment "vra:measurement type length" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:QuantitativeValue ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:locationOf
+    rdfs:label "location of" ;
+    rdfs:comment "vra:location" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:range vra:Place ;
+    rdfs:domain vra:Work ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:manufacturer
+    rdfs:label "manufacturer" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:mateOf
+    rdfs:label "mate of" ;
+    rdfs:comment "vra:relation type mateOf" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:material
+    rdfs:label "material" ;
+    rdfs:comment "vra:material" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:Material ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:modelFor
+    rdfs:label "model for" ;
+    rdfs:comment "vra:relation type modelFor" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:hasModel" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:owner
+    rdfs:label "owner" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:painter
+    rdfs:label "painter" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:partnerInSetWith
+    rdfs:label "partner in set with" ;
+    rdfs:comment "vra:relation type partnerInSetWith" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:partOf
+    rdfs:label "part of" ;
+    rdfs:comment "vra:relation type partOf" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:range vra:Collection ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:pendantOf
+    rdfs:label "pendant of" ;
+    rdfs:comment "vra:relation type pendentOf" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:performer
+    rdfs:label "performer" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:photographer
+    rdfs:label "photographer" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:placeOfCreation
+    rdfs:label "place of creation" ;
+    rdfs:comment "vra:location type creation" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:range vra:Place ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:subPropertyOf "vra:locationOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:placeOfDiscovery
+    rdfs:label "place of discovery" ;
+    rdfs:comment "vra:location type discovery" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:range vra:Place ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:subPropertyOf "vra:locationOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:placeOfExhibition
+    rdfs:label "place of exhibition" ;
+    rdfs:comment "vra:location type exhibition" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:range vra:Place ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:subPropertyOf "vra:locationOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:placeOfInstallation
+    rdfs:label "place of installation" ;
+    rdfs:comment "vra:location type installation" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:range vra:Place ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:subPropertyOf "vra:locationOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:placeOfIntention
+    rdfs:label "place of intention" ;
+    rdfs:comment "vra:location type intention" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:range vra:Place ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:subPropertyOf "vra:locationOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:placeOfOwnership
+    rdfs:label "place of ownership" ;
+    rdfs:comment "vra:location type owner" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:range vra:Place ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:subPropertyOf "vra:locationOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:placeOfPerformance
+    rdfs:label "place of performance" ;
+    rdfs:comment "vra:location type performance" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:range vra:Place ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:subPropertyOf "vra:locationOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:placeOfPublication
+    rdfs:label "place of publication" ;
+    rdfs:comment "vra:location type publication" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:Place ;
+    rdfs:subPropertyOf "vra:locationOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:placeOfRepository
+    rdfs:label "place of repository" ;
+    rdfs:comment "vra:location type repository" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:range vra:Place ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:subPropertyOf "vra:locationOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:placeOfSite
+    rdfs:label "place of site" ;
+    rdfs:comment "vra:location type site" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:range vra:Place ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:subPropertyOf "vra:locationOf" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:planFor
+    rdfs:label "plan for" ;
+    rdfs:comment "vra:relation type planFor" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:hasPlan" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:preparatoryFor
+    rdfs:label "preparatory for" ;
+    rdfs:comment "vra:relation type prepatoryFor" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:printer
+    rdfs:label "printer" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:printingPlateFor
+    rdfs:label "printing plate for" ;
+    rdfs:comment "vra:relation type printingPlateFor" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:producer
+    rdfs:label "producer" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:programmer
+    rdfs:label "programmer" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:prototypeFor
+    rdfs:label "prototype for" ;
+    rdfs:comment "vra:relation type prototypeFor" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:hasPrototype" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:reliefFor
+    rdfs:label "relief for" ;
+    rdfs:comment "vra:relation type reliefFor" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:replicaOf
+    rdfs:label "replica of" ;
+    rdfs:comment "vra:relation type replicaOf" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:restorer
+    rdfs:label "restorer" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:runningTime
+    rdfs:label "running time" ;
+    rdfs:comment "vra:measurement type runningTime" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:QuantitativeValue ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:sourceFor
+    rdfs:label "source for" ;
+    rdfs:comment "vra:relation type sourceFor" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:derivedFrom" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:studyFor
+    rdfs:label "study for" ;
+    rdfs:comment "vra:relation type studyFor" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:venueFor
+    rdfs:label "venue for" ;
+    rdfs:comment "vra:relation type venueFor" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:range vra:Place ;
+    rdfs:domain vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    owl:inverseOf "vra:exhibitedAt" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:versionOf
+    rdfs:label "version of" ;
+    rdfs:comment "vra:relation type versionOf" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain vra:Work ;
+    rdfs:range vra:Work ;
+    rdfs:subPropertyOf "vra:isRelatedTo" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:wasAlteration
+    rdfs:label "was alteration" ;
+    rdfs:comment "vra:date type alteration" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:Event ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:wasBroadcast
+    rdfs:label "was broadcast" ;
+    rdfs:comment "vra:date type broadcast" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:Event ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:wasCommission
+    rdfs:label "was commission" ;
+    rdfs:comment "vra:date type commission" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:Event ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:wasCreated
+    rdfs:label "was created" ;
+    rdfs:comment "vra:date type created" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:Event ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:wasDesigned
+    rdfs:label "was designed" ;
+    rdfs:comment "vra:date type designed" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:Event ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:wasDestroyed
+    rdfs:label "was destroyed" ;
+    rdfs:comment "vra:date type destroyed" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:Event ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:wasDiscovered
+    rdfs:label "was discovered" ;
+    rdfs:comment "vra:date type discovered" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:Event ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:wasPerformed
+    rdfs:label "was performed" ;
+    rdfs:comment "vra:date type performed" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:Event ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:wasPresented
+    rdfs:label "was presented" ;
+    rdfs:comment "vra:date type presented" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:Event ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:wasProduced
+    rdfs:label "was produced" ;
+    rdfs:comment "vra:date type produced" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:Event ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:wasPublished
+    rdfs:label "was published" ;
+    rdfs:comment "vra:date type published" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:Event ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:wasRestored
+    rdfs:label "was restored" ;
+    rdfs:comment "vra:date type restored" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:Event ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:weight
+    rdfs:label "weight" ;
+    rdfs:comment "vra:measurement type weight" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:QuantitativeValue ;
+    owl:equivalentProperty "so:weight" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:width
+    rdfs:label "width" ;
+    rdfs:comment "vra:measurement type width" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range vra:QuantitativeValue ;
+    owl:equivalentProperty "so:width" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:writer
+    rdfs:label "writer" ;
+    rdfs:comment "derived from ULAN list of Artist Roles" ;
+    rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf "vra:creator" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:birthDate
+    rdfs:label "birth date" ;
+    rdfs:comment "vra:agentDate type life (earliestDate)" ;
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain vra:Person ;
+    rdfs:range xsd:date ;
+    owl:equivalentProperty "so:birthDate" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:bitrate
+    rdfs:label "bit rate" ;
+    rdfs:comment "vra:measurement type bitDepth" ;
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range xsd:string ;
+    owl:equivalentProperty "so:bitrate" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:caption
+    rdfs:label "caption" ;
+    rdfs:comment "caption value for a vra:inscription" ;
+    rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf "vra:text" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:contentSize
+    rdfs:label "content size" ;
+    rdfs:comment "vra:measurement type:fileSize" ;
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range xsd:string ;
+    owl:equivalentProperty "so:contentSize" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:dateCreated
+    rdfs:label "date created" ;
+    rdfs:comment "date of creation" ;
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range xsd:dateTime ;
+    owl:equivalentProperty "so:dateCreated" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:deathDate
+    rdfs:label "death date" ;
+    rdfs:comment "vra:agentDate type life (latestDate)" ;
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain vra:Person ;
+    rdfs:range xsd:date ;
+    rdfs:subPropertyOf "owl:topDataProperty" ;
+    owl:equivalentProperty "so:deathDate" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:description
+    rdfs:label "description" ;
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain owl:Thing ;
+    owl:equivalentProperty "so:description" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:endDate
+    rdfs:label "end date" ;
+    rdfs:comment "endDate of a schema:Event" ;
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain vra:Event ;
+    rdfs:range xsd:date ;
+    owl:equivalentProperty "so:endDate" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:mark
+    rdfs:label "mark" ;
+    rdfs:comment "mark value of a vra:inscription" ;
+    rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf "vra:text" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:name
+    rdfs:label "name" ;
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:string ;
+    owl:equivalentProperty "so:name" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:position
+    rdfs:label "position" ;
+    rdfs:comment "position value for a vra:inscription" ;
+    rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf "vra:description" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:resolution
+    rdfs:label "resolution" ;
+    rdfs:comment "vra:measurement type resolution" ;
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range xsd:string ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:signature
+    rdfs:label "signature" ;
+    rdfs:comment "signature value of a vra:inscription" ;
+    rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf "vra:text" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:startDate
+    rdfs:label "start date" ;
+    rdfs:comment "startDate value of a schema:Event" ;
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain vra:Event ;
+    rdfs:range xsd:date ;
+    owl:equivalentProperty "so:startDate" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:text
+    rdfs:label "text" ;
+    rdfs:comment "Text" ;
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range xsd:string ;
+    owl:equivalentProperty "so:text" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:title
+    rdfs:label "title" ;
+    rdfs:comment "Title of a CreativeWork" ;
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain so:CreativeWork ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf "vra:name" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:translation
+    rdfs:label "translation" ;
+    rdfs:comment "tranaslation value of a vra:inscription" ;
+    rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf "vra:text" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:unitCode
+    rdfs:label "unit code" ;
+    rdfs:comment "3 value code for unit of measures used in schema:QuantitativeValue" ;
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain vra:QuantitativeValue ;
+    rdfs:range xsd:string ;
+    owl:equivalentProperty "so:unitCode" ;
+    rdfs:isDefinedBy vra: ;
+.
+
+vra:value
+    rdfs:label "value" ;
+    rdfs:comment "numeric value used in schema:QuantitativeValue" ;
+    rdf:type owl:DatatypeProperty ;
+    rdfs:domain vra:QuantitativeValue ;
+    owl:equivalentProperty "so:value" ;
+    rdfs:isDefinedBy vra: ;
+    .
